@@ -15,7 +15,7 @@ et non `http`, cf TP nº1)
 
 | | | |
 |---:|---|---|
-| amphi + TP groupes 1 | Dominique Poulalhon | dominique.poulalhon@irif.fr |
+| amphi + TP groupe 1 | Dominique Poulalhon | dominique.poulalhon@irif.fr |
 | TP groupe 2 | Mirna Dzamonja | mdzamonja@irif.fr |
 | TP groupe 3 | Isabelle Fagnot | isabelle.fagnot@irif.fr |
 | TP groupes 4 et 5 | Guillaume Geoffroy |  guillaume.geoffroy@irif.fr |
@@ -55,7 +55,7 @@ La note finale tiendra compte des éléments suivants :
 * [cours nº1](Cours/cours_1.pdf) : introduction, rôle d'un système
   d'exploitation, notions de processus, de fichier, d'appel système
 
-# TP
+# TD et TP
 
 
 # Projet
