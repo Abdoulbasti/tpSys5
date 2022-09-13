@@ -1,2 +1,68 @@
-# SY5 2022-2023
+Systèmes L3 2022-2023
+=================
+
+**Conseil :** cloner ce dépôt et travailler directement dans le répertoire cloné.
+
+```bash
+git clone git@gaufre.informatique.univ-paris-diderot.fr:poulalho/sy5-2022-2023.git
+...
+git pull
+```
+(ce mode de clonage nécessite une authentification par le protocole `ssh`
+et non `http`, cf TP nº1)
+
+# Équipe pédagogique
+
+| | | |
+|---:|---|---|
+| amphi + TP groupes 1 | Dominique Poulalhon | dominique.poulalhon@irif.fr |
+| TP groupe 2 | Mirna Dzamonja | mdzamonja@irif.fr |
+| TP groupe 3 | Isabelle Fagnot | isabelle.fagnot@irif.fr |
+| TP groupes 4 et 5 | Guillaume Geoffroy |  guillaume.geoffroy@irif.fr |
+| TP groupe  MI | Anne Micheli | anne.micheli@irif.fr |
+
+
+# Suggestions pour réviser le C
+
+* _Modern C_, de Jens Gustedt, 2020 (Manning Publications), [disponible en
+  ligne](https://modernc.gforge.inria.fr/)
+* [un tutoriel qui a une bonne
+  tête](https://zestedesavoir.com/tutoriels/755/le-langage-c-1/); voir la
+  section II en particulier.
+
+# Suggestions de ressources externes 
+
+Attention, ces ressources traitent beaucoup plus que le contenu du cours,
+il est facile de s'y perdre...
+
+* _UNIX, Programmation et communication_, J.-M. Rifflet et J.-B. Yunès, Dunod
+* _Modern Operating Systems_, A. Tanenbaum, Pearson; les 2e et 3e éditions ont été traduites en français (_Systèmes d'exploitation_)
+* [le manuel de POSIX](https://pubs.opengroup.org/onlinepubs/9699919799/)
+
+
+# Modalités d'évaluation
+
+La note finale tiendra compte des éléments suivants :
+* assiduité (vérification systématique de la présence en TD/TP)
+* partiel (sans doute sous forme de QCM début novembre)
+* projet (énoncé donné fin octobre, échéancier à respecter, rendu et
+  soutenance)
+* examen écrit
+
+
+# Cours
+
+* [cours nº1](Cours/cours_1.pdf) : introduction, rôle d'un système
+  d'exploitation, notions de processus, de fichier, d'appel système
+
+# TP
+
+
+# Projet
+
+
+# Sujets d'examen
+
+* [sujet 2021-2022](Examens/examen_2021-2022_session1_SY5.pdf)
+* [sujet de substitution](Examens/substitution_2021-2022_SY5.pdf)
 
