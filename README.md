@@ -17,7 +17,7 @@ et non `http`, cf TP nº1)
 |---:|---|---|
 | amphi + TP groupe 1 | Dominique Poulalhon | dominique.poulalhon@irif.fr |
 | TP groupe 2 | Mirna Dzamonja | mdzamonja@irif.fr |
-| TP groupe 3 | Isabelle Fagnot | isabelle.fagnot@irif.fr |
+| TP groupe 3 | Isabelle Fagnot | fagnot@irif.fr |
 | TP groupes 4 et 5 | Guillaume Geoffroy |  guillaume.geoffroy@irif.fr |
 | TP groupe  MI | Anne Micheli | anne.micheli@irif.fr |
 
