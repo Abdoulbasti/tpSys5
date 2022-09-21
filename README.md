@@ -55,7 +55,13 @@ La note finale tiendra compte des éléments suivants :
 * [cours nº1](Cours/cours_1.pdf) : introduction, rôle d'un système
   d'exploitation, notions de processus, de fichier, d'appel système
 
+* cours nº2 : `open`, `close`, `read`, `write`; les [slides](Cours/cours_2.pdf) 
+  + [programmes](Cours/code_cours_2) présentés en cours
+
+
 # TD et TP
+
+* [énoncé de TP nº1](TP/TP1/tp1.pdf) : `ssh` et rappels (SGF, bash)
 
 
 # Projet
