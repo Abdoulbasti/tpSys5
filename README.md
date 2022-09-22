@@ -56,6 +56,7 @@ La note finale tiendra compte des éléments suivants :
   d'exploitation, notions de processus, de fichier, d'appel système
 
 * cours nº2 : `open`, `close`, `read`, `write`; les [slides](Cours/cours_2.pdf) 
+  (les derniers n'ont pas été vus, nous y reviendrons)
   + [programmes](Cours/code_cours_2) présentés en cours
 
 
