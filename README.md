@@ -63,6 +63,7 @@ La note finale tiendra compte des éléments suivants :
 # TD et TP
 
 * [énoncé de TP nº1](TP/TP1/tp1.pdf) : `ssh` et rappels (SGF, bash)
+* [énoncé de TP nº2](TP/TP1/tp2.md) : entrées-sorties
 
 
 # Projet
