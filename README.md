@@ -59,11 +59,14 @@ La note finale tiendra compte des éléments suivants :
   (les derniers n'ont pas été vus, nous y reviendrons)
   + [programmes](Cours/code_cours_2) présentés en cours
 
+* [cours nº3](Cours/cours_3.pdf) 
+  + [programmes](Cours/code_cours_3) présentés en cours
+
 
 # TD et TP
 
 * [énoncé de TP nº1](TP/TP1/tp1.pdf) : `ssh` et rappels (SGF, bash)
-* [énoncé de TP nº2](TP/TP1/tp2.md) : entrées-sorties
+* [énoncé de TP nº2](TP/TP2/tp2.md) : entrées-sorties
 
 
 # Projet
