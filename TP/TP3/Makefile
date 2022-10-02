@@ -8,6 +8,7 @@ work: templates
 tarexamples :
 	echo "Z'ai cru voir passer un 'rominet" >| titi
 	echo "Faprifti" >| grosminet
+	chmod ug+x grosminet
 	tar cf titi.tar titi grosminet
 	rm titi grosminet
 	head -c 2048 titi.tar >| sans_zeros.tar
