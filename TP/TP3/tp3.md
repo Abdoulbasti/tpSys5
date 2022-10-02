@@ -39,8 +39,8 @@ Un bloc entête a une structure décrite par le type `struct posix_header` dans 
   
   - `char size[12]` : taille du fichier. Même remarque que précédemment concernant le codage de ce nombre, mais cette fois sur 12 caractères au lieu de 8. La lecture pourra se faire par `sscanf(hd.size, "%o", ...)`.
   
-  - `char chksum[8]` : empreinte ("checksum") de ce bloc entête que vous pouvez ignorer lors de la lecture.
-  <!--En revanche, pour fabriquer un `tar` acceptable par GNU `tar` ce champ doit être correct. Pour cela, utiliser la fonction fournie `set_checksum()` de `tarutils.c` une fois que votre entête est prêt. Pour plus de détail, voir le commentaire devant `set_checksum()`.-->
+  <!--- `char chksum[8]` : empreinte ("checksum") de ce bloc entête que vous pouvez ignorer lors de la lecture.
+  En revanche, pour fabriquer un `tar` acceptable par GNU `tar` ce champ doit être correct. Pour cela, utiliser la fonction fournie `set_checksum()` de `tarutils.c` une fois que votre entête est prêt. Pour plus de détail, voir le commentaire devant `set_checksum()`.-->
 
   - `char typeflag` : il vaut `'0'` ou `'\0'` pour un fichier ordinaire,  et par exemple `'5'`pour un répertoire. *Les archives manipulées dans ce TP ne contiendront que des fichiers ordinaires*.
  
