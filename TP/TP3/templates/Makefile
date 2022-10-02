@@ -1,13 +1,11 @@
 CC      ?= gcc
 CFLAGS  ?= -Wall -std=c99
 
-all : listar detar mktar
+all : listar detar
 
 listar : listar.c tarutils.o
 
 detar  : detar.c tarutils.o
-
-mktar : mktar.c tarutils.o
 
 
 
