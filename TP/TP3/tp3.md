@@ -17,7 +17,8 @@ Note : par défaut, une archive `tar` n'est pas compressée, mais il suffit d'ut
 
 #### Le format des archives tar
 
-Il existe plusieurs variantes de `tar`, elles-mêmes avec un certain nombre d'extensions possibles. Ce qui suit devrait suffire à pouvoir lire la plupart des fichiers `.tar`, et à écrire des `.tar` acceptés par la plupart des utilitaires `tar`. Pour une description plus exhaustive du format, voir [ici](https://www.gnu.org/software/tar/manual/html_node/Standard.html).
+Il existe plusieurs variantes de `tar`, elles-mêmes avec un certain nombre d'extensions possibles. Ce qui suit devrait suffire à pouvoir lire la plupart des fichiers `.tar`
+acceptés par la plupart des utilitaires `tar`. Pour une description plus exhaustive du format, voir [ici](https://www.gnu.org/software/tar/manual/html_node/Standard.html).
 
 Un fichier `tar` est une suite de blocs de 512 octets. S'il représente une archive des fichiers `f1`, ..., `fn`, alors ce fichier `tar` comporte, dans l'ordre :
  
@@ -34,11 +35,12 @@ Un bloc entête a une structure décrite par le type `struct posix_header` dans 
 
   - `char name[100]` : nom long du fichier (_ie_ sa référence relative au point d'archivage). On supposera ici que 100 caractères suffisent pour stocker ce nom. Les caractères inutilisés seront mis à `'\0'`.
   
-  - `char mode[8]` : permissions du fichier, converties en entier. Comme pour tous les autres champs numériques de l'entête, le dernier caractère est un `'\0'`, et les autres des caractères-chiffres entre `'0'` et `'7'` représentant un entier en octal. On pourra lire ce champ avec un `sscanf(hd.mode, "%o", ...)` et le remplir avec un `sprintf(hd.mode, "%07o", ...)`.
+  - `char mode[8]` : permissions du fichier, converties en entier. Comme pour tous les autres champs numériques de l'entête, le dernier caractère est un `'\0'`, et les autres des caractères-chiffres entre `'0'` et `'7'` représentant un entier en octal. On pourra lire ce champ avec un `sscanf(hd.mode, "%o", ...)`.
   
-  - `char size[12]` : taille du fichier. Même remarque que précédemment concernant le codage de ce nombre, mais cette fois sur 12 caractères au lieu de 8. La lecture pourra se faire par `sscanf(hd.size, "%o", ...)` et l'écriture par `sprintf(hd.size, "%011o", ...)`.
+  - `char size[12]` : taille du fichier. Même remarque que précédemment concernant le codage de ce nombre, mais cette fois sur 12 caractères au lieu de 8. La lecture pourra se faire par `sscanf(hd.size, "%o", ...)`.
   
-  - `char chksum[8]` : empreinte ("checksum") de ce bloc entête. À la lecture, vous pouvez l'ignorer. En revanche, pour fabriquer un `tar` acceptable par GNU `tar` ce champ doit être correct. Pour cela, utiliser la fonction fournie `set_checksum()` de `tarutils.c` une fois que votre entête est prêt. Pour plus de détail, voir le commentaire devant `set_checksum()`.
+  - `char chksum[8]` : empreinte ("checksum") de ce bloc entête que vous pouvez ignorer lors de la lecture.
+  <!--En revanche, pour fabriquer un `tar` acceptable par GNU `tar` ce champ doit être correct. Pour cela, utiliser la fonction fournie `set_checksum()` de `tarutils.c` une fois que votre entête est prêt. Pour plus de détail, voir le commentaire devant `set_checksum()`.-->
 
   - `char typeflag` : il vaut `'0'` ou `'\0'` pour un fichier ordinaire,  et par exemple `'5'`pour un répertoire. *Les archives manipulées dans ce TP ne contiendront que des fichiers ordinaires*.
  
@@ -96,6 +98,10 @@ Vérifier que `listar` parvient à lister le contenu des archives valides fourni
 
   Vérifier que `detar` se comporte bien comme `tar xvf` lorsqu'on lui
   passe deux paramètres, par exemple `titi.tar` et `grosminet`.
+
+  Quels sont les droits de `grosminet` dans l'archive ? Vérifier
+  que les droits du fichier `grosminet` extrait par votre commande
+  sont bien les mêmes.
 
   ___Attention! L'extraction d'une archive peut faire des dégâts, se placer dans `/tmp` pour les tests est encore plus important qu'à l'exercice précédent.___
 
