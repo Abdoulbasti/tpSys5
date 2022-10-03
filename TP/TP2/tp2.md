@@ -14,7 +14,7 @@ TP nº2 : entrées-sorties
    [TP/TP2/template](javascript:;), vous risqueriez ensuite d’avoir des
    problèmes pour mettre à jour le dépôt).
 4. Déplacez-vous dans le répertoire [TP/TP2/work](javascript:;) pour
-   travailler.
+   travailler. 
 
 
 ### Exercice 1 : les entrées/sorties de haut-niveau
